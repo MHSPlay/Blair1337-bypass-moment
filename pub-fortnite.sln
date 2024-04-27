@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pragma-fortnite", "pragma-fortnite.vcxproj", "{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		release [polymorph]|x64 = release [polymorph]|x64
+		release [polymorph]|x86 = release [polymorph]|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.Debug|x64.ActiveCfg = Debug|x64
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.Debug|x64.Build.0 = Debug|x64
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.Debug|x86.ActiveCfg = Debug|Win32
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.Debug|x86.Build.0 = Debug|Win32
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.release [polymorph]|x64.ActiveCfg = release [polymorph]|x64
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.release [polymorph]|x64.Build.0 = release [polymorph]|x64
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.release [polymorph]|x86.ActiveCfg = release [polymorph]|Win32
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.release [polymorph]|x86.Build.0 = release [polymorph]|Win32
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.Release|x64.ActiveCfg = Release|x64
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.Release|x64.Build.0 = Release|x64
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.Release|x86.ActiveCfg = Release|Win32
+		{5BDF0F44-625E-4898-AA3D-CC5D5FBC3DCD}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C20618E-C31B-4CA9-9C9D-A968C13C3CD1}
+	EndGlobalSection
+EndGlobal

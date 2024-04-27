@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release [polymorph]|Win32">
+      <Configuration>release [polymorph]</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release [polymorph]|x64">
+      <Configuration>release [polymorph]</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5bdf0f44-625e-4898-aa3d-cc5d5fbc3dcd}</ProjectGuid>
+    <RootNamespace>pragmafortnite</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>pub1-fortnite</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='release [polymorph]|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='release [polymorph]|x64'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)binary\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)intermediate\$(Configuration)</IntDir>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release [polymorph]|x64'">
+    <OutDir>$(SolutionDir)binary</OutDir>
+    <IntDir>$(SolutionDir)trash</IntDir>
+    <TargetName>custom</TargetName>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release [polymorph]|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <AdditionalOptions>/W0 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)components\authentication\library_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="components\bypass\context.cpp" />
+    <ClCompile Include="components\bypass\cve\magic.cpp" />
+    <ClCompile Include="components\bypass\cve\service.cpp" />
+    <ClCompile Include="components\bypass\cve\utils.cpp" />
+    <ClCompile Include="components\bypass\memory.cpp" />
+    <ClCompile Include="components\imgui\backend\imgui_impl_dx11.cpp" />
+    <ClCompile Include="components\imgui\backend\imgui_impl_win32.cpp" />
+    <ClCompile Include="components\imgui\im_draw.cpp" />
+    <ClCompile Include="components\imgui\renderer\imgui.cpp" />
+    <ClCompile Include="components\imgui\renderer\imgui_demo.cpp" />
+    <ClCompile Include="components\imgui\renderer\imgui_draw.cpp" />
+    <ClCompile Include="components\imgui\renderer\imgui_tables.cpp" />
+    <ClCompile Include="components\imgui\renderer\imgui_widgets.cpp" />
+    <ClCompile Include="executors\core.cpp" />
+    <ClCompile Include="executors\deploy.cpp" />
+    <ClCompile Include="executors\esp\bounds.cpp" />
+    <ClCompile Include="executors\esp\box.cpp" />
+    <ClCompile Include="executors\esp\distance.cpp" />
+    <ClCompile Include="executors\esp\weapon.cpp" />
+    <ClCompile Include="executors\esp\name.cpp" />
+    <ClCompile Include="executors\esp\tracer.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="components\authentication\authenticator.hpp" />
+    <ClInclude Include="components\authentication\sk_str.hpp" />
+    <ClInclude Include="components\bypass\cve\context.hpp" />
+    <ClInclude Include="components\bypass\cve\kernel_exploit.hpp" />
+    <ClInclude Include="components\bypass\cve\magic.hpp" />
+    <ClInclude Include="components\bypass\cve\memory.hpp" />
+    <ClInclude Include="components\bypass\cve\nt.hpp" />
+    <ClInclude Include="components\bypass\cve\service.hpp" />
+    <ClInclude Include="components\bypass\cve\utils.hpp" />
+    <ClInclude Include="components\engine\actor.hpp" />
+    <ClInclude Include="components\engine\function.hpp" />
+    <ClInclude Include="components\engine\item.hpp" />
+    <ClInclude Include="components\engine\matrices.hpp" />
+    <ClInclude Include="components\engine\mouse.h" />
+    <ClInclude Include="components\engine\offsets.hpp" />
+    <ClInclude Include="components\engine\queue.hpp" />
+    <ClInclude Include="components\imgui\backend\imgui_impl_dx11.h" />
+    <ClInclude Include="components\imgui\backend\imgui_impl_win32.h" />
+    <ClInclude Include="components\imgui\glyphs\pragma_font.hpp" />
+    <ClInclude Include="components\imgui\im_draw.hpp" />
+    <ClInclude Include="components\imgui\menu\on_paint.hpp" />
+    <ClInclude Include="components\imgui\renderer\imconfig.h" />
+    <ClInclude Include="components\imgui\renderer\imgui.h" />
+    <ClInclude Include="components\imgui\renderer\imgui_internal.h" />
+    <ClInclude Include="components\imgui\renderer\imstb_rectpack.h" />
+    <ClInclude Include="components\imgui\renderer\imstb_textedit.h" />
+    <ClInclude Include="components\imgui\renderer\imstb_truetype.h" />
+    <ClInclude Include="components\linker\jit.hpp" />
+    <ClInclude Include="components\linker\lazy.h" />
+    <ClInclude Include="components\linker\li.hpp" />
+    <ClInclude Include="components\linker\stdafx.hpp" />
+    <ClInclude Include="components\linker\xorstr.hpp" />
+    <ClInclude Include="components\themida\SecureEngineCustomVMs.h" />
+    <ClInclude Include="components\themida\SecureEngineCustomVMs_BorlandC_inline.h" />
+    <ClInclude Include="components\themida\SecureEngineCustomVMs_GNU_inline.h" />
+    <ClInclude Include="components\themida\SecureEngineCustomVMs_ICL_inline.h" />
+    <ClInclude Include="components\themida\SecureEngineCustomVMs_LCC_inline.h" />
+    <ClInclude Include="components\themida\SecureEngineCustomVMs_VC_inline.h" />
+    <ClInclude Include="components\themida\ThemidaSDK.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="components\authentication\library_x64.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
